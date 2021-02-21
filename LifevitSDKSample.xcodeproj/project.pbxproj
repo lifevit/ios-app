@@ -29,7 +29,7 @@
 		1418504420A567120000E097 /* WSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1418503D20A567120000E097 /* WSViewController.m */; };
 		1418504520A567120000E097 /* TensioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1418503E20A567120000E097 /* TensioViewController.m */; };
 		580C668F2167676F00DC7F99 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 580C668E2167676F00DC7F99 /* ScanViewController.m */; };
-		9A981D34FDCA19D238179304 /* Pods_LifevitSDKSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E195AC82DA2114334DC14D35 /* Pods_LifevitSDKSample.framework */; };
+		9A73ED1F15DCFC0B39C23262 /* Pods_LifevitSDKSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E195AC82DA2114334DC14D35 /* Pods_LifevitSDKSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -96,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A981D34FDCA19D238179304 /* Pods_LifevitSDKSample.framework in Frameworks */,
+				9A73ED1F15DCFC0B39C23262 /* Pods_LifevitSDKSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +212,7 @@
 				1418500720A557AA0000E097 /* Frameworks */,
 				1418500820A557AA0000E097 /* Resources */,
 				1418504820A569250000E097 /* Embed Frameworks */,
-				C542F8ECF1F81280ADD15380 /* [CP] Embed Pods Frameworks */,
+				0D5B7D3DE41A45E231A1F6AF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -277,7 +277,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C542F8ECF1F81280ADD15380 /* [CP] Embed Pods Frameworks */ = {
+		0D5B7D3DE41A45E231A1F6AF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -488,7 +488,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 9PKASRGK46;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)/**";
 				GCC_PREFIX_HEADER = LifevitSDKSample/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
@@ -515,7 +515,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 9PKASRGK46;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)/**";
 				GCC_PREFIX_HEADER = LifevitSDKSample/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (

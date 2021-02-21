@@ -1,0 +1,22 @@
+PODS:
+  - LifevitSDK (1.7.6)
+
+DEPENDENCIES:
+  - LifevitSDK (from `https://github.com/lifevit/ios-sdk.git`, branch `1.7.6`)
+
+EXTERNAL SOURCES:
+  LifevitSDK:
+    :branch: 1.7.6
+    :git: https://github.com/lifevit/ios-sdk.git
+
+CHECKOUT OPTIONS:
+  LifevitSDK:
+    :commit: 1c44e546afb958dc06b928da82156492963a6420
+    :git: https://github.com/lifevit/ios-sdk.git
+
+SPEC CHECKSUMS:
+  LifevitSDK: a98979383785b9681005a1c03b91bba2279c1450
+
+PODFILE CHECKSUM: 0384ed1b38200029d11bd8ae964d552caabde822
+
+COCOAPODS: 1.8.4
