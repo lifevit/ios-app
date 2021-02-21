@@ -4,6 +4,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 target 'LifevitSDKSample' do
-    pod 'LifevitSDK', :branch => "1.7.6", :git => "https://github.com/lifevit/ios-sdk.git"
+    pod 'LifevitSDK', :branch => "2.1.0", :git => "https://github.com/lifevit/ios-sdk.git"
 end
 
