@@ -26,10 +26,12 @@
     
     NSArray* identifiers = [launchOptions objectForKey:UIApplicationLaunchOptionsBluetoothCentralsKey];
     
-    [[LifevitSDKManager sharedInstance] setCentralManagerIdentifiers:identifiers];
+    //[[LifevitSDKManager sharedInstance] setCentralManagerIdentifiers:identifiers];
+    [[LifevitSDKManager sharedInstance] initCentralManagerWithoutBackgroundMode];
     
     [application setMinimumBackgroundFetchInterval:10];
     
+    [LifevitSDKManager sharedInstance].delegate = self;
     [LifevitSDKManager sharedInstance].deviceDelegate = self;
     [LifevitSDKManager sharedInstance].oximeterDelegate = self;
     [LifevitSDKManager sharedInstance].weightscaleDelegate = self;
@@ -253,6 +255,14 @@
     });
 }
 
+#pragma mark - Manager delegate
 
+- (void)bluetoothPoweredOn:(BOOL)on{
+    if(on){
+         if(![[LifevitSDKManager sharedInstance] isDeviceConnected:DEVICE_OXIMETER]){
+                   [[LifevitSDKManager sharedInstance] connectDevice:DEVICE_OXIMETER];
+         }
+    }
+}
 
 @end

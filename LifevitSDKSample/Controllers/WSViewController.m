@@ -24,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblBodyAge;
 @property (weak, nonatomic) IBOutlet UILabel *lblIdealWeight;
 @property (weak, nonatomic) IBOutlet UILabel *lblObesity;
+@property (weak, nonatomic) IBOutlet UILabel *lblBia;
 
 @end
 
@@ -58,7 +59,8 @@
     
     switch(deviceStatus){
         case STATUS_DISCONNECTED:
-            [[LifevitSDKManager sharedInstance] setWeightScaleParams:@"kg" withGender:GENDER_MALE Age:35 andHeight:190];
+        [[LifevitSDKManager sharedInstance] setWeightScaleParams:@"kg" withGender:GENDER_MALE Age:40 andHeight:184];
+        //[[LifevitSDKManager sharedInstance] setWeightScaleParams:@"kg" withGender:GENDER_FEMALE Age:35 andHeight:190];
             [[LifevitSDKManager sharedInstance] connectDevice:DEVICE_WEIGHT_SCALE withTimeout:30];
             break;
         case STATUS_CONNECTED:
@@ -80,16 +82,17 @@
         
         self.lblWeight.text = data.weight? [NSString stringWithFormat:@"%.2f%@ (temp)", [data.weight doubleValue], data.unit]: @"-";
         self.lblIMC.text = data.imc? [NSString stringWithFormat:@"%.2f (temp)", [data.imc doubleValue]]: @"-";
-        self.lblWater.text = data.waterRawValue? [NSString stringWithFormat:@"%.2f %%", [data.waterRawValue doubleValue]]: @"-";
-        self.lblFat.text = data.fatRawValue? [NSString stringWithFormat:@"%.2f %%", [data.fatRawValue doubleValue]]: @"-";
+        self.lblWater.text = data.waterRawValue? [NSString stringWithFormat:@"%.2f %% - %.2f kg", [data.waterPercentage doubleValue], [data.waterRawValue doubleValue]]: @"-";
+        self.lblFat.text = data.fatRawValue? [NSString stringWithFormat:@"%.2f %% - %.2f kg", [data.fatPercentage doubleValue], [data.fatRawValue doubleValue]]: @"-";
         self.lblBMR.text = data.bmr? [NSString stringWithFormat:@"%.2f kCal", [data.bmr doubleValue]]: @"-";
-        self.lblVisceral.text = data.visceralRawValue? [NSString stringWithFormat:@"%.2f %%", [data.visceralRawValue doubleValue]]: @"-";
-        self.lblMuscle.text = data.muscleRawValue? [NSString stringWithFormat:@"%.2f kg", [data.muscleRawValue doubleValue]]: @"-";
-        self.lblBone.text = data.boneRawValue? [NSString stringWithFormat:@"%.2f kg", [data.boneRawValue doubleValue]]: @"-";
+        self.lblVisceral.text = data.visceralRawValue? [NSString stringWithFormat:@"%.2f %% - %.2f kg", [data.visceralPercentage doubleValue], [data.visceralRawValue doubleValue]]: @"-";
+        self.lblMuscle.text = data.muscleRawValue? [NSString stringWithFormat:@"%.2f %% - %.2f kg", [data.musclePercentage doubleValue], [data.muscleRawValue doubleValue]]: @"-";
+        self.lblBone.text = data.boneRawValue? [NSString stringWithFormat:@"%.2f %% - %.2f kg", [data.bonePercentage doubleValue], [data.boneRawValue doubleValue]]: @"-";
         self.lblProtein.text = data.proteinPercentage? [NSString stringWithFormat:@"%.2f %%", [data.proteinPercentage doubleValue]]: @"-";
         self.lblObesity.text = data.obesityPercentage? [NSString stringWithFormat:@"%.2f %%", [data.obesityPercentage doubleValue]]: @"-";
         self.lblBodyAge.text = data.bodyAge? [NSString stringWithFormat:@"%.2f", [data.bodyAge doubleValue]]: @"-";
         self.lblIdealWeight.text = data.idealWeight? [NSString stringWithFormat:@"%.2f kg", [data.idealWeight doubleValue]]: @"-";
+        self.lblBia.text = data.bia? [NSString stringWithFormat:@"%.2f", [data.bia doubleValue]]: @"-";
         
     });
 }
@@ -99,16 +102,17 @@
         
         self.lblWeight.text = data.weight? [NSString stringWithFormat:@"%.2f%@", [data.weight doubleValue], data.unit]: @"-";
         self.lblIMC.text = data.imc? [NSString stringWithFormat:@"%.2f", [data.imc doubleValue]]: @"-";
-        self.lblWater.text = data.waterRawValue? [NSString stringWithFormat:@"%.2f %%", [data.waterRawValue doubleValue]]: @"-";
-        self.lblFat.text = data.fatRawValue? [NSString stringWithFormat:@"%.2f %%", [data.fatRawValue doubleValue]]: @"-";
+        self.lblWater.text = data.waterRawValue? [NSString stringWithFormat:@"%.2f %% - %.2f kg", [data.waterPercentage doubleValue], [data.waterRawValue doubleValue]]: @"-";
+        self.lblFat.text = data.fatRawValue? [NSString stringWithFormat:@"%.2f %% - %.2f kg", [data.fatPercentage doubleValue], [data.fatRawValue doubleValue]]: @"-";
         self.lblBMR.text = data.bmr? [NSString stringWithFormat:@"%.2f kCal", [data.bmr doubleValue]]: @"-";
-        self.lblVisceral.text = data.visceralRawValue? [NSString stringWithFormat:@"%.2f %%", [data.visceralRawValue doubleValue]]: @"-";
-        self.lblMuscle.text = data.muscleRawValue? [NSString stringWithFormat:@"%.2f kg", [data.muscleRawValue doubleValue]]: @"-";
-        self.lblBone.text = data.boneRawValue? [NSString stringWithFormat:@"%.2f kg", [data.boneRawValue doubleValue]]: @"-";
+        self.lblVisceral.text = data.visceralRawValue? [NSString stringWithFormat:@"%.2f %% - %.2f kg", [data.visceralPercentage doubleValue], [data.visceralRawValue doubleValue]]: @"-";
+        self.lblMuscle.text = data.muscleRawValue? [NSString stringWithFormat:@"%.2f %% - %.2f kg", [data.musclePercentage doubleValue], [data.muscleRawValue doubleValue]]: @"-";
+        self.lblBone.text = data.boneRawValue? [NSString stringWithFormat:@"%.2f %% - %.2f kg", [data.bonePercentage doubleValue], [data.boneRawValue doubleValue]]: @"-";
         self.lblProtein.text = data.proteinPercentage? [NSString stringWithFormat:@"%.2f %%", [data.proteinPercentage doubleValue]]: @"-";
         self.lblObesity.text = data.obesityPercentage? [NSString stringWithFormat:@"%.2f %%", [data.obesityPercentage doubleValue]]: @"-";
         self.lblBodyAge.text = data.bodyAge? [NSString stringWithFormat:@"%.2f", [data.bodyAge doubleValue]]: @"-";
         self.lblIdealWeight.text = data.idealWeight? [NSString stringWithFormat:@"%.2f kg", [data.idealWeight doubleValue]]: @"-";
+        self.lblBia.text = data.bia? [NSString stringWithFormat:@"%.2f", [data.bia doubleValue]]: @"-";
         
     });
 }

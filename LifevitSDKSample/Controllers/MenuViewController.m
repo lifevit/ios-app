@@ -32,6 +32,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [LifevitSDKManager sharedInstance].delegate = self;
+    
     // Register the table view cell class and its reuse id
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     self.tableView.delegate = self;
@@ -43,6 +45,16 @@
     
     [self setTitle:@"Lifevit SDK Sample"];
 
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        BOOL bluetoothOn = [[LifevitSDKManager sharedInstance] isBluetoothOn];
+        
+        [self checkBluetooth:bluetoothOn];
+    });
 }
 
 - (void)didReceiveMemoryWarning {
@@ -87,7 +99,7 @@
             [cell.textLabel setText:@"Oximeter"];
             break;
         case MENU_BRACELET:
-            [cell.textLabel setText:@"Bracelet AT-250/AT-500HR"];
+            [cell.textLabel setText:@"Bracelet AT250/AT500HR/VITAL"];
             break;
         case MENU_THERMOMETER:
             [cell.textLabel setText:@"Thermometer"];
@@ -150,6 +162,29 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 60;
 }
+
+-(void) checkBluetooth:(BOOL) on{
+    if (on) {
+        [_lblTitle setTextColor:UIColor.blackColor];
+    } else {
+        [_lblTitle setTextColor:UIColor.redColor];
+    }
+}
+
+
+//MARK: LifevitSDKManagerDelegate
+-(void) bluetoothPoweredOn:(BOOL) on{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self checkBluetooth:on];
+    });
+
+    if(on){
+    if(![[LifevitSDKManager sharedInstance] isDeviceConnected:DEVICE_OXIMETER]){
+              [[LifevitSDKManager sharedInstance] connectDevice:DEVICE_OXIMETER];
+    }
+    }
+}
+
 
 
 

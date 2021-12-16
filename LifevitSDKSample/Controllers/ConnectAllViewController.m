@@ -45,8 +45,10 @@
     [[LifevitSDKManager sharedInstance] connectDevice:DEVICE_WEIGHT_SCALE withTimeout:30];
     [[LifevitSDKManager sharedInstance] connectDevice:DEVICE_TENSIO_BRACELET withTimeout:30];
     [[LifevitSDKManager sharedInstance] connectDevice:DEVICE_BRACELET_AT250 withTimeout:30];
+    [[LifevitSDKManager sharedInstance] connectDevice:DEVICE_BRACELET_VITAL withTimeout:30];
     [[LifevitSDKManager sharedInstance] connectDevice:DEVICE_BRACELET_AT500HR withTimeout:30];
     [[LifevitSDKManager sharedInstance] connectDevice:DEVICE_BABYTHERMOMETER withTimeout:30];
+
 }
 
 - (IBAction)onStopAll:(id)sender {
@@ -56,6 +58,7 @@
     [[LifevitSDKManager sharedInstance] disconnectDevice:DEVICE_WEIGHT_SCALE];
     [[LifevitSDKManager sharedInstance] disconnectDevice:DEVICE_TENSIO_BRACELET];
     [[LifevitSDKManager sharedInstance] disconnectDevice:DEVICE_BRACELET_AT250];
+    [[LifevitSDKManager sharedInstance] disconnectDevice:DEVICE_BRACELET_VITAL];
     [[LifevitSDKManager sharedInstance] disconnectDevice:DEVICE_BRACELET_AT500HR];
     [[LifevitSDKManager sharedInstance] disconnectDevice:DEVICE_BABYTHERMOMETER];
     
@@ -109,7 +112,9 @@
         case DEVICE_BABYTHERMOMETER:
             cell.lblDeviceType.text = @"Termómetro Bebé";
             break;
-            
+        case DEVICE_BRACELET_VITAL:
+            cell.lblDeviceType.text = @"Pulsera VITAL";
+            break;
         default:
             break;
     }

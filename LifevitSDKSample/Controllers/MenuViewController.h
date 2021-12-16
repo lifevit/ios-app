@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@import LifevitSDK;
 
-@interface MenuViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface MenuViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, LifevitSDKManagerDelegate>
 
 @end

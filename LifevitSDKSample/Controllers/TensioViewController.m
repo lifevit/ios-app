@@ -83,7 +83,11 @@
 
 
 - (IBAction)onStartMeasurement:(id)sender {
-    [[LifevitSDKManager sharedInstance] startMeasurement];
+    //if ([self.btnStart.titleLabel.text isEqualToString:@"Start Measurement"]){
+        [[LifevitSDKManager sharedInstance] startMeasurement];
+    //} else {
+    //    [[LifevitSDKManager sharedInstance] stopMeasurement];
+    //}
 }
 
 #pragma mark - Device delegate
@@ -99,6 +103,7 @@
                 [self.lblStatus setTextColor:[UIColor greenColor]];
                 [self.btnAction setTitle:@"Disconnect" forState:UIControlStateNormal];
                 [self checkUUID];
+                
                 break;
             case STATUS_DISCONNECTED:
                 [self.btnStart setHidden:YES];
@@ -118,6 +123,8 @@
                 [self.lblStatus setTextColor:[UIColor blackColor]];
                 [self.btnAction setTitle:@"Disconnect" forState:UIControlStateNormal];
         }
+        
+        //[self.btnStart setTitle:@"Start Measurement" forState:UIControlStateNormal];
     });
 }
 
@@ -128,32 +135,47 @@
     });
 }
 
+- (void)device:(int)device onBatteryLevelReceived:(int)battery{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.lblStatus setTextColor:[UIColor redColor]];
+        _lblStatus.text = [@"Battery Level: " stringByAppendingString:[@(battery) stringValue]];
+        //[self.btnStart setTitle:@"Start Measurement" forState:UIControlStateNormal];
+    });
+}
+
 - (void)heartDeviceOnResult:(LifevitSDKHeartData *)data{
     dispatch_async(dispatch_get_main_queue(), ^{
-    switch ([data.errorCode intValue]) {
-        case CODE_OK:
-            _lblSystolic.text = [data.systolic stringValue];
-            _lblDiastolic.text = [data.diastolic stringValue];
-            _lblPulse.text = [data.pulse stringValue];
-            self.lblStatus.text = @"Connected";
-            [self.lblStatus setTextColor:[UIColor greenColor]];
-            break;
-            
-        default:
-            if([data.errorCode intValue] != CODE_LOW_BATTERY){
-                [self.lblStatus setTextColor:[UIColor redColor]];
-                _lblStatus.text = [@"On result error: " stringByAppendingString:[data.errorCode stringValue]];
-            }
-            break;
-    }
+        switch ([data.errorCode intValue]) {
+            case CODE_OK:
+                _lblSystolic.text = [data.systolic stringValue];
+                _lblDiastolic.text = [data.diastolic stringValue];
+                _lblPulse.text = [data.pulse stringValue];
+                self.lblStatus.text = @"Connected";
+                [self.lblStatus setTextColor:[UIColor greenColor]];
+                break;
+                
+            default:
+                if([data.errorCode intValue] != CODE_LOW_BATTERY){
+                    [self.lblStatus setTextColor:[UIColor redColor]];
+                    _lblStatus.text = [@"On result error: " stringByAppendingString:[data.errorCode stringValue]];
+                }
+                break;
+        }
+        
+        //[self.btnStart setTitle:@"Start Measurement" forState:UIControlStateNormal];
     });
+    
+    
+    [[LifevitSDKManager sharedInstance] checkBatteryLevel:DEVICE_HEART];
 }
 
 - (void)heartDeviceOnProgressMeasurement:(int)pulse{
     
     dispatch_async(dispatch_get_main_queue(), ^{
-    [self.lblStatus setTextColor:[UIColor blackColor]];
-    _lblStatus.text = [@"Progress measurement. Pulse: " stringByAppendingString:[@(pulse) stringValue]];
+        [self.lblStatus setTextColor:[UIColor blackColor]];
+        //[self.btnStart setTitle:@"Stop Measurement" forState:UIControlStateNormal];
+        
+        _lblStatus.text = [@"Progress measurement. Pulse: " stringByAppendingString:[@(pulse) stringValue]];
     });
 }
 

@@ -10,7 +10,7 @@
 
 @import LifevitSDK;
 
-@interface BraceletViewController : UIViewController<LifevitDeviceDelegate, LifevitBraceletDelegate, LifevitBraceletAT250Delegate>
+@interface BraceletViewController : UIViewController<LifevitDeviceDelegate, LifevitBraceletDelegate, LifevitBraceletAT250Delegate, LifevitBraceletVITALDelegate>
 
 
 @end

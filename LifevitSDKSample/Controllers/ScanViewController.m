@@ -101,7 +101,9 @@
         case DEVICE_BRACELET_AT250_DFU:
             h.lblSection.text = @"Pulsera AT250 DFU";
             break;
-            
+        case DEVICE_BRACELET_VITAL:
+            h.lblSection.text = @"Pulsera VITAL";
+            break;
         default:
             break;
     }
