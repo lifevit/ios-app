@@ -34,8 +34,7 @@
     
     if([[LifevitSDKManager sharedInstance] isDeviceConnected:DEVICE_OXIMETER]){
         deviceStatus = STATUS_CONNECTED;
-    }
-    else{
+    } else {
         deviceStatus = STATUS_DISCONNECTED;
     }
     

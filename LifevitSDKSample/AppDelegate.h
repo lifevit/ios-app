@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @import LifevitSDK;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, LifevitDeviceDelegate, LifevitOximeterDelegate, LifevitWeightScaleDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, LifevitDeviceDelegate, LifevitOximeterDelegate, LifevitWeightScaleDelegate, LifevitSDKManagerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

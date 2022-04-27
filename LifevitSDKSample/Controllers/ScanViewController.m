@@ -80,6 +80,9 @@
         case DEVICE_OXIMETER:
             h.lblSection.text = @"Oxímetro";
             break;
+        case DEVICE_GLUCOMETER:
+            h.lblSection.text = @"Glucómetro";
+            break;
         case DEVICE_THERMOMETER:
             h.lblSection.text = @"Termómetro";
             break;
@@ -101,7 +104,9 @@
         case DEVICE_BRACELET_AT250_DFU:
             h.lblSection.text = @"Pulsera AT250 DFU";
             break;
-            
+        case DEVICE_BRACELET_VITAL:
+            h.lblSection.text = @"Pulsera VITAL";
+            break;
         default:
             break;
     }

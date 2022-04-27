@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F32EAAD4-69C1-49B9-BF8D-E4E7046C4896"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0BD78428-7569-4050-8C6E-F619FA21DCA4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/LifevitSDKManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1497"
+            endingLineNumber = "1497"
+            landmarkName = "-centralManager:didDiscoverPeripheral:advertisementData:RSSI:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C3B08DBE-6AB0-4127-9C53-FAEF636AD083"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/LifevitSDKManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1272"
+            endingLineNumber = "1272"
+            landmarkName = "-checkPeripheral:rssi:advertisementData:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1EC88793-27F4-4E1F-ACD1-0071463C5C5D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/LifevitSDKManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1298"
+            endingLineNumber = "1298"
+            landmarkName = "-checkPeripheral:rssi:advertisementData:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "887C6502-485E-4670-821A-9A2352476E48"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/LifevitSDKManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1321"
+            endingLineNumber = "1321"
+            landmarkName = "-detectedPeripheral:forType:withRSSI:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF271E91-FEDE-4C61-904C-10F0A9B80B31"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/LifevitSDKManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "272"
+            endingLineNumber = "272"
+            landmarkName = "-connectDevice:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7980482-9E7F-4DD7-9EFE-231541CDD835"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/LifevitSDKManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "277"
+            endingLineNumber = "277"
+            landmarkName = "-connectDevice:withTimeout:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "459B4EAD-4292-4831-8FCD-007419DD6FAA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/LifevitSDKManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "479"
+            endingLineNumber = "479"
+            landmarkName = "-connectDevice:withTimeout:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A1CEC68-8FA3-40CC-916C-6536D01C19E8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/LifevitSDKManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "368"
+            endingLineNumber = "368"
+            landmarkName = "-connectDevice:withTimeout:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D4D769A-B091-4C80-A977-BDDEDAB1F219"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/LifevitSDKManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "473"
+            endingLineNumber = "473"
+            landmarkName = "-connectDevice:withTimeout:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B6B145F-8F34-4038-9C97-8CD3CF924691"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/LifevitSDKManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "729"
+            endingLineNumber = "729"
+            landmarkName = "-disconnectDevice:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0248C0E7-0EFB-4062-AA82-7B1B90CAEB7F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "-peripheral:didWriteValueForDescriptor:error:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0248C0E7-0EFB-4062-AA82-7B1B90CAEB7F - b5d82e24cffeb570"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LifevitSDKGlucometer peripheral:didWriteValueForDescriptor:error:]"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/onavas/Developer/iOS/LifevitSDK/LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "0248C0E7-0EFB-4062-AA82-7B1B90CAEB7F - b5d82e24cffeb570"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LifevitSDKGlucometer peripheral:didWriteValueForDescriptor:error:]"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/onavas/Developer/iOS/LifevitSDK/LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DAAB7684-838F-4C83-95EB-04156A81176F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
+            landmarkName = "-doWithData:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DAAB7684-838F-4C83-95EB-04156A81176F - 1f2f9c4f608d5a39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LifevitSDKGlucometer doWithData:]"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/onavas/Developer/iOS/LifevitSDK/LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "221"
+                  endingLineNumber = "221"
+                  offsetFromSymbolStart = "320">
+               </Location>
+               <Location
+                  uuid = "DAAB7684-838F-4C83-95EB-04156A81176F - 1f2f9c4f608d5a39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LifevitSDKGlucometer doWithData:]"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/onavas/Developer/iOS/LifevitSDK/LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "221"
+                  endingLineNumber = "221"
+                  offsetFromSymbolStart = "272">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27CB5AF5-9CCF-4BEB-918A-E9EEE2851D20"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
+            landmarkName = "-doWithData:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52CF4D35-86C7-4847-9485-B93E311806BE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "237"
+            endingLineNumber = "237"
+            landmarkName = "-checkResult:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0CA73E05-08ED-44D4-97D8-5EF96D8197A8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
+            landmarkName = "-checkResult:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A4C3E66-49A3-4F30-AD0B-EE0B3CBBCFAC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
+            landmarkName = "-checkResult:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C5B5131A-EBD2-4161-AC09-58F7B17A1C39"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/Utils/HexUtils.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "+encodeHex:toDigits:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6DEE2AE-D346-472E-830C-313B1D532D55"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "288"
+            endingLineNumber = "288"
+            landmarkName = "-checkResult:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "051E591D-253E-4B2D-B8F7-96F6AF4A8631"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "324"
+            endingLineNumber = "324"
+            landmarkName = "-checkBLEInfo:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "051E591D-253E-4B2D-B8F7-96F6AF4A8631 - c4cfcef4ccd35002"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LifevitSDKGlucometer checkBLEInfo:]"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/onavas/Developer/iOS/LifevitSDK/LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "324"
+                  endingLineNumber = "324"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "051E591D-253E-4B2D-B8F7-96F6AF4A8631 - c4cfcef4ccd35002"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LifevitSDKGlucometer checkBLEInfo:]"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/onavas/Developer/iOS/LifevitSDK/LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "324"
+                  endingLineNumber = "324"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B23782E7-6AC0-42FF-9758-ACC18C72B7DB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "314"
+            endingLineNumber = "314"
+            landmarkName = "-checkBLEInfo:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B23782E7-6AC0-42FF-9758-ACC18C72B7DB - c4cfcef4ccd351f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LifevitSDKGlucometer checkBLEInfo:]"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/onavas/Developer/iOS/LifevitSDK/LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "315"
+                  endingLineNumber = "315"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "B23782E7-6AC0-42FF-9758-ACC18C72B7DB - c4cfcef4ccd351d4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LifevitSDKGlucometer checkBLEInfo:]"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/onavas/Developer/iOS/LifevitSDK/LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "314"
+                  endingLineNumber = "314"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "14E50FC1-C208-4C9A-BFC2-7081EF52F119"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
+            landmarkName = "-checkResult:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA2D9CC6-F5D4-4F79-92EE-FBE5129BDE3E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "388"
+            endingLineNumber = "388"
+            landmarkName = "-sendCommand:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EE22EB5A-4157-4975-9A26-0AFA001C9372"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "381"
+            endingLineNumber = "381"
+            landmarkName = "-sendCommand:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CA2792DF-61DB-48AD-94D2-FB978021E26B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/Glucometer/LifevitSDKGlucometer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "-peripheral:didUpdateValueForCharacteristic:error:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

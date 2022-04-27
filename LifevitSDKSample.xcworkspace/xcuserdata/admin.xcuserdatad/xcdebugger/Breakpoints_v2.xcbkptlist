@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EF7DD231-990A-4E9B-8EBF-0EEF80350FF7"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D306E784-7C96-45A7-AF7A-F4F0374A7A15"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2334"
+            endingLineNumber = "2334"
+            landmarkName = "-processGetDetailedSleepDataResponse:length:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D306E784-7C96-45A7-AF7A-F4F0374A7A15 - 7c7e746113d24d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LifevitSDKBraceletVital processGetBloodOxygenDataResponse:length:]"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Develop/IOS/Lifevit/LifevitSDK/LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2326"
+                  endingLineNumber = "2326"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "D306E784-7C96-45A7-AF7A-F4F0374A7A15 - cd887bbec3b4b0f2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__53-[LifevitSDKBraceletVital getBloodOxygenData:record:]_block_invoke"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Develop/IOS/Lifevit/LifevitSDK/LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2325"
+                  endingLineNumber = "2325"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "D306E784-7C96-45A7-AF7A-F4F0374A7A15 - cd887bbec3b4bd12"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__53-[LifevitSDKBraceletVital getBloodOxygenData:record:]_block_invoke"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Develop/IOS/Lifevit/LifevitSDK/LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2357"
+                  endingLineNumber = "2357"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "D306E784-7C96-45A7-AF7A-F4F0374A7A15 - cd887bbec3b4beec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__53-[LifevitSDKBraceletVital getBloodOxygenData:record:]_block_invoke"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Develop/IOS/Lifevit/LifevitSDK/LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2371"
+                  endingLineNumber = "2371"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "D306E784-7C96-45A7-AF7A-F4F0374A7A15 - 5f7af55ed11a4b8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LifevitSDKBraceletVital processGetDetailedSleepDataResponse:length:]"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Develop/IOS/Lifevit/LifevitSDK/LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2336"
+                  endingLineNumber = "2336"
+                  offsetFromSymbolStart = "1792">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F9E7E240-D116-4BBD-AB5A-39C88D2F823B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2702"
+            endingLineNumber = "2702"
+            landmarkName = "-getAutomaticBloodOxygenData:record:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F9E7E240-D116-4BBD-AB5A-39C88D2F823B - 4d95d0dd6267129e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LifevitSDKBraceletVital processGetAutomaticBloodOxygenDataResponse:length:]"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Develop/IOS/Lifevit/LifevitSDK/LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2645"
+                  endingLineNumber = "2645"
+                  offsetFromSymbolStart = "568">
+               </Location>
+               <Location
+                  uuid = "F9E7E240-D116-4BBD-AB5A-39C88D2F823B - 4d95d0dd626712bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LifevitSDKBraceletVital processGetAutomaticBloodOxygenDataResponse:length:]"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Develop/IOS/Lifevit/LifevitSDK/LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2644"
+                  endingLineNumber = "2644"
+                  offsetFromSymbolStart = "1156">
+               </Location>
+               <Location
+                  uuid = "F9E7E240-D116-4BBD-AB5A-39C88D2F823B - 4d95d0dd626712fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LifevitSDKBraceletVital processGetAutomaticBloodOxygenDataResponse:length:]"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Develop/IOS/Lifevit/LifevitSDK/LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2646"
+                  endingLineNumber = "2646"
+                  offsetFromSymbolStart = "1156">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "48BB231F-B1D9-445F-9CE3-DC1486AA5103"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3354"
+            endingLineNumber = "3354"
+            landmarkName = "-processGetAutomaticTemperatureDataResponse:length:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "16C6535E-C02A-4C60-B6A1-DF91026C14DA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3372"
+            endingLineNumber = "3372"
+            landmarkName = "-getAutomaticHeartRateData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A507FB1-DE54-4CED-94D6-2DBCAA7E8990"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3358"
+            endingLineNumber = "3358"
+            landmarkName = "-processGetAutomaticTemperatureDataResponse:length:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74B2BF29-894B-4D5B-AFFA-23E576E0CC4D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3723"
+            endingLineNumber = "3723"
+            landmarkName = "-processECGMeasurement:length:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "74B2BF29-894B-4D5B-AFFA-23E576E0CC4D - 70b4412805129e4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LifevitSDKBraceletVital processECGMeasurement:length:]"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Develop/IOS/Lifevit/LifevitSDK/LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "3494"
+                  endingLineNumber = "3494"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "74B2BF29-894B-4D5B-AFFA-23E576E0CC4D - 868b21ac8fb87c09"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LifevitSDKBraceletVital processECGWaveform:length:]"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Develop/IOS/Lifevit/LifevitSDK/LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "3494"
+                  endingLineNumber = "3494"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ABD79620-CE2A-4383-8396-30003113CE75"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2124"
+            endingLineNumber = "2124"
+            landmarkName = "-getDetailedStepData:record:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1A354DB-DAF7-41EB-962B-937FF185E6D7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "675"
+            endingLineNumber = "675"
+            landmarkName = "-peripheral:didUpdateValueForCharacteristic:error:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E1A354DB-DAF7-41EB-962B-937FF185E6D7 - ff845f8eb4f18d90"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LifevitSDKBraceletVital peripheral:didUpdateValueForCharacteristic:error:]"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Develop/IOS/Lifevit/LifevitSDK/LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "670"
+                  endingLineNumber = "670"
+                  offsetFromSymbolStart = "3048">
+               </Location>
+               <Location
+                  uuid = "E1A354DB-DAF7-41EB-962B-937FF185E6D7 - ff845f8eb4f18db3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LifevitSDKBraceletVital peripheral:didUpdateValueForCharacteristic:error:]"
+                  moduleName = "LifevitSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Develop/IOS/Lifevit/LifevitSDK/LifevitSDK/LifevitSDK/SDK/LifevitSDKBraceletVital.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "669"
+                  endingLineNumber = "669"
+                  offsetFromSymbolStart = "2952">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22E82E67-C4A0-48BE-B593-543362F768F3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LifevitSDK/LifevitSDKTests/LifevitSDKTests.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "-testExample"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
