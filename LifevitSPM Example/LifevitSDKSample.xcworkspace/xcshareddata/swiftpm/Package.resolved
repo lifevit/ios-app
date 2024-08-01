@@ -1,0 +1,15 @@
+{
+  "originHash" : "88a3c21604e6d29b12e11893753aae447a8c0303e24f836ae44de857c048bcee",
+  "pins" : [
+    {
+      "identity" : "lifevitspm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lifevit/LifevitSPM.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "bafd8debab9ddee9e69f085f11ebe08dc6e0af33"
+      }
+    }
+  ],
+  "version" : 3
+}
