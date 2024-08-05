@@ -32,8 +32,8 @@
 		1418504520A567120000E097 /* TensioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1418503E20A567120000E097 /* TensioViewController.m */; };
 		4935B9682C5A33AF0024D91C /* TranstekTensiometreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935B9672C5A33AF0024D91C /* TranstekTensiometreViewController.swift */; };
 		496A01E02C5B965F0010FCC2 /* LifevitSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 496A01DF2C5B965F0010FCC2 /* LifevitSPM */; };
-		53BFEC20E0CF1759A068BC48 /* Pods_LifevitSDKSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F060692923F48C92D66A961D /* Pods_LifevitSDKSample.framework */; };
 		580C668F2167676F00DC7F99 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 580C668E2167676F00DC7F99 /* ScanViewController.m */; };
+		EF2EF7438EE43519F75E5342 /* Pods_LifevitSDKSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8299D70EA8280CC6A4A8DA8 /* Pods_LifevitSDKSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -93,12 +93,12 @@
 		1418503C20A567120000E097 /* TensioBraceletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensioBraceletViewController.h; sourceTree = "<group>"; };
 		1418503D20A567120000E097 /* WSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSViewController.m; sourceTree = "<group>"; };
 		1418503E20A567120000E097 /* TensioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TensioViewController.m; sourceTree = "<group>"; };
-		2C8BB0A556BA8B56905FA10E /* Pods-LifevitSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifevitSDKSample.release.xcconfig"; path = "Target Support Files/Pods-LifevitSDKSample/Pods-LifevitSDKSample.release.xcconfig"; sourceTree = "<group>"; };
 		4935B9672C5A33AF0024D91C /* TranstekTensiometreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranstekTensiometreViewController.swift; sourceTree = "<group>"; };
 		580C668D2167676F00DC7F99 /* ScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
 		580C668E2167676F00DC7F99 /* ScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
-		EC2393BE284E8F6147817B7D /* Pods-LifevitSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifevitSDKSample.debug.xcconfig"; path = "Target Support Files/Pods-LifevitSDKSample/Pods-LifevitSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
-		F060692923F48C92D66A961D /* Pods_LifevitSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifevitSDKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C784275915EF24F527A6D4B4 /* Pods-LifevitSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifevitSDKSample.debug.xcconfig"; path = "Target Support Files/Pods-LifevitSDKSample/Pods-LifevitSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
+		D8299D70EA8280CC6A4A8DA8 /* Pods_LifevitSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifevitSDKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA0BBF0672F6E78AA2A4E23 /* Pods-LifevitSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifevitSDKSample.release.xcconfig"; path = "Target Support Files/Pods-LifevitSDKSample/Pods-LifevitSDKSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53BFEC20E0CF1759A068BC48 /* Pods_LifevitSDKSample.framework in Frameworks */,
 				496A01E02C5B965F0010FCC2 /* LifevitSPM in Frameworks */,
+				EF2EF7438EE43519F75E5342 /* Pods_LifevitSDKSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +136,7 @@
 				1418500C20A557AA0000E097 /* LifevitSDKSample */,
 				1418500B20A557AA0000E097 /* Products */,
 				FA065F82BEFE0E2ED2CD0E10 /* Pods */,
-				469A141626C7CA5A71419769 /* Frameworks */,
+				E62938DE00868C4CCB71F867 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,10 +200,10 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		469A141626C7CA5A71419769 /* Frameworks */ = {
+		E62938DE00868C4CCB71F867 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F060692923F48C92D66A961D /* Pods_LifevitSDKSample.framework */,
+				D8299D70EA8280CC6A4A8DA8 /* Pods_LifevitSDKSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,8 +211,8 @@
 		FA065F82BEFE0E2ED2CD0E10 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EC2393BE284E8F6147817B7D /* Pods-LifevitSDKSample.debug.xcconfig */,
-				2C8BB0A556BA8B56905FA10E /* Pods-LifevitSDKSample.release.xcconfig */,
+				C784275915EF24F527A6D4B4 /* Pods-LifevitSDKSample.debug.xcconfig */,
+				DDA0BBF0672F6E78AA2A4E23 /* Pods-LifevitSDKSample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -224,12 +224,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1418502320A557AE0000E097 /* Build configuration list for PBXNativeTarget "LifevitSDKSample" */;
 			buildPhases = (
-				3773161B1FFFCEA4AB240D56 /* [CP] Check Pods Manifest.lock */,
+				60A1A9AD7B316723302B2B87 /* [CP] Check Pods Manifest.lock */,
 				1418500620A557AA0000E097 /* Sources */,
 				1418500720A557AA0000E097 /* Frameworks */,
 				1418500820A557AA0000E097 /* Resources */,
 				1418504820A569250000E097 /* Embed Frameworks */,
 				146564C723D6090E00A3DD5D /* ShellScript */,
+				2BDD091A5606898E6AE7DF18 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -316,10 +317,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "
-";
+			shellScript = "\n";
 		};
-		3773161B1FFFCEA4AB240D56 /* [CP] Check Pods Manifest.lock */ = {
+		2BDD091A5606898E6AE7DF18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LifevitSDKSample/Pods-LifevitSDKSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LifevitSDKSample/Pods-LifevitSDKSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LifevitSDKSample/Pods-LifevitSDKSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60A1A9AD7B316723302B2B87 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -506,7 +523,7 @@
 		};
 		1418502420A557AE0000E097 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC2393BE284E8F6147817B7D /* Pods-LifevitSDKSample.debug.xcconfig */;
+			baseConfigurationReference = C784275915EF24F527A6D4B4 /* Pods-LifevitSDKSample.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -521,6 +538,7 @@
 				);
 				GCC_PREFIX_HEADER = LifevitSDKSample/PrefixHeader.pch;
 				INFOPLIST_FILE = LifevitSDKSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -560,7 +578,7 @@
 		};
 		1418502520A557AE0000E097 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C8BB0A556BA8B56905FA10E /* Pods-LifevitSDKSample.release.xcconfig */;
+			baseConfigurationReference = DDA0BBF0672F6E78AA2A4E23 /* Pods-LifevitSDKSample.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -575,6 +593,7 @@
 				);
 				GCC_PREFIX_HEADER = LifevitSDKSample/PrefixHeader.pch;
 				INFOPLIST_FILE = LifevitSDKSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
