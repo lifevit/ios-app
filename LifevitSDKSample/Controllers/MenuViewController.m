@@ -21,6 +21,7 @@
 #define MENU_PILL_REMINDER 9
 #define MENU_GLUCOMETER 10
 #define MENU_TRANSTEK_TENSIO 11
+#define MENU_AOJ_THERMOMETER 12
 
 @interface MenuViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -77,7 +78,7 @@
 #pragma mark TableView
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 12;
+    return 13;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -120,6 +121,10 @@
             break;
         case MENU_TRANSTEK_TENSIO:
             [cell.textLabel setText:@"Transtek Tensiometers"];
+            break;
+            
+        case MENU_AOJ_THERMOMETER:
+            [cell.textLabel setText:@"AOJ Thermometer"];
             break;
         default:
             break;
@@ -165,6 +170,9 @@
             break;
         case MENU_TRANSTEK_TENSIO:
             [self performSegueWithIdentifier:@"showTranstekTensiometers" sender:self];
+            break;
+        case MENU_AOJ_THERMOMETER:
+            [self performSegueWithIdentifier:@"showAOJThermometer" sender:self];
             break;
             
         default:

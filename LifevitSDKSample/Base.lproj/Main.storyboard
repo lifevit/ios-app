@@ -75,6 +75,7 @@
                         <segue destination="Om1-gF-qjn" kind="show" identifier="showPillReminder" id="F7C-R4-9TN"/>
                         <segue destination="6b1-1r-sdq" kind="show" identifier="showGlucometer" id="nhQ-8d-eeC"/>
                         <segue destination="8y0-n3-yrD" kind="show" identifier="showTranstekTensiometers" id="hMI-eA-IMN"/>
+                        <segue destination="9aE-RA-Pt6" kind="show" identifier="showAOJThermometer" id="1TN-Lc-998"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yk4-E1-BC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1098,6 +1099,122 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rlE-Ew-6fz" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1030" y="-897"/>
+        </scene>
+        <!--Thermometer View Controller-->
+        <scene sceneID="BOk-qz-FUF">
+            <objects>
+                <viewController id="9aE-RA-Pt6" customClass="AOJThermometerViewController" customModule="LifevitSDKSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eKh-N0-1qp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hYV-MF-SnB" userLabel="Status stack">
+                                <rect key="frame" x="20" y="128" width="374" height="25"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DG0-lm-HlN">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="dYH-re-AFM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdt-nM-W9n">
+                                        <rect key="frame" x="70" y="0.0" width="304" height="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="RAh-cV-UEk"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVb-yk-X1H">
+                                <rect key="frame" x="20" y="173" width="374" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-º" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBp-ES-KdP" userLabel="value Label">
+                                <rect key="frame" x="103.66666666666669" y="412.33333333333331" width="207" height="71.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5K0-2I-g64">
+                                <rect key="frame" x="167" y="514" width="80" height="80"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="4vm-Re-OmW"/>
+                                    <constraint firstAttribute="width" secondItem="5K0-2I-g64" secondAttribute="height" multiplier="1:1" id="SOX-76-ZmL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thermometer mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSZ-vO-rKE">
+                                <rect key="frame" x="20" y="614" width="374" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Fed-0r-Pjc">
+                                <rect key="frame" x="20" y="782" width="374" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2N-sr-smA">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Update info"/>
+                                        <connections>
+                                            <action selector="onUpdateInfo:" destination="9aE-RA-Pt6" eventType="touchUpInside" id="FwN-z2-L69"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWi-2o-ub2">
+                                        <rect key="frame" x="197" y="0.0" width="177" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Last measure"/>
+                                        <connections>
+                                            <action selector="onRetrieveLastMeasure:" destination="9aE-RA-Pt6" eventType="touchUpInside" id="ldZ-2r-1se"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VYs-DE-20e"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3qz-rM-uPb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3qz-rM-uPb" firstAttribute="trailing" secondItem="Fed-0r-Pjc" secondAttribute="trailing" constant="20" id="0TP-13-Lqf"/>
+                            <constraint firstItem="mVb-yk-X1H" firstAttribute="leading" secondItem="3qz-rM-uPb" secondAttribute="leading" constant="20" id="1RO-NT-kn7"/>
+                            <constraint firstItem="3qz-rM-uPb" firstAttribute="trailing" secondItem="mVb-yk-X1H" secondAttribute="trailing" constant="20" id="1i9-GS-W8O"/>
+                            <constraint firstItem="TSZ-vO-rKE" firstAttribute="leading" secondItem="3qz-rM-uPb" secondAttribute="leading" constant="20" id="3IA-4d-wTJ"/>
+                            <constraint firstItem="QBp-ES-KdP" firstAttribute="width" secondItem="eKh-N0-1qp" secondAttribute="width" multiplier="0.5" id="Aoz-ct-Kjw"/>
+                            <constraint firstItem="QBp-ES-KdP" firstAttribute="centerX" secondItem="eKh-N0-1qp" secondAttribute="centerX" id="Hb8-uU-IRZ"/>
+                            <constraint firstItem="5K0-2I-g64" firstAttribute="centerX" secondItem="eKh-N0-1qp" secondAttribute="centerX" id="KRN-en-8Hf"/>
+                            <constraint firstItem="QBp-ES-KdP" firstAttribute="centerY" secondItem="eKh-N0-1qp" secondAttribute="centerY" id="Lkj-Sq-UrI"/>
+                            <constraint firstItem="hYV-MF-SnB" firstAttribute="top" secondItem="3qz-rM-uPb" secondAttribute="top" constant="40" id="VeS-fj-bZo"/>
+                            <constraint firstItem="3qz-rM-uPb" firstAttribute="trailing" secondItem="TSZ-vO-rKE" secondAttribute="trailing" constant="20" id="Whr-ay-wOo"/>
+                            <constraint firstItem="TSZ-vO-rKE" firstAttribute="top" secondItem="5K0-2I-g64" secondAttribute="bottom" constant="20" id="XaD-TF-LEu"/>
+                            <constraint firstItem="5K0-2I-g64" firstAttribute="top" secondItem="QBp-ES-KdP" secondAttribute="bottom" constant="30" id="bZy-RB-fN7"/>
+                            <constraint firstItem="3qz-rM-uPb" firstAttribute="trailing" secondItem="hYV-MF-SnB" secondAttribute="trailing" constant="20" id="da7-t4-rVI"/>
+                            <constraint firstItem="mVb-yk-X1H" firstAttribute="top" secondItem="hYV-MF-SnB" secondAttribute="bottom" constant="20" id="fd8-Yu-ict"/>
+                            <constraint firstItem="hYV-MF-SnB" firstAttribute="leading" secondItem="3qz-rM-uPb" secondAttribute="leading" constant="20" id="qhV-7F-TnI"/>
+                            <constraint firstItem="3qz-rM-uPb" firstAttribute="bottom" secondItem="Fed-0r-Pjc" secondAttribute="bottom" constant="30" id="spg-oF-W0Y"/>
+                            <constraint firstItem="Fed-0r-Pjc" firstAttribute="leading" secondItem="3qz-rM-uPb" secondAttribute="leading" constant="20" id="xnY-Xu-ZWl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9XC-yl-lSc"/>
+                    <connections>
+                        <outlet property="infoLabel" destination="mVb-yk-X1H" id="jGU-Cf-NOB"/>
+                        <outlet property="modeImageView" destination="5K0-2I-g64" id="fb8-Fe-1Hn"/>
+                        <outlet property="statusLabel" destination="vdt-nM-W9n" id="qoB-rE-shL"/>
+                        <outlet property="valueLabel" destination="QBp-ES-KdP" id="YNK-nt-67R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZGm-1q-SiZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3935" y="-1021"/>
         </scene>
         <!--Transtek Tensiometre View Controller-->
         <scene sceneID="z4l-z7-Fiu">
