@@ -24,6 +24,10 @@ class AOJThermometerViewController: UIViewController {
         setupView()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        manager.disconnect()
+    }
+    
     private func setupView() {
         manager.delegate = self
         manager.scanConnectAndRetrieveData()
@@ -46,6 +50,10 @@ class AOJThermometerViewController: UIViewController {
 
 
 extension AOJThermometerViewController: AOJDelegate {
+    func onConnectedPeripheral(identifier: String, name: String) {
+        print(">> Connected on \(name) with id: \(identifier)")
+    }
+    
     func onDeviceInfo(deviceInfo: AOJDeviceInfo) {
         DispatchQueue.main.async {
             self.statusLabel.text = "Connected ✅"
