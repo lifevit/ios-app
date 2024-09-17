@@ -30,9 +30,9 @@
 		1418504320A567120000E097 /* BabyThermometerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1418503920A567110000E097 /* BabyThermometerViewController.m */; };
 		1418504420A567120000E097 /* WSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1418503D20A567120000E097 /* WSViewController.m */; };
 		1418504520A567120000E097 /* TensioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1418503E20A567120000E097 /* TensioViewController.m */; };
-		4935B9682C5A33AF0024D91C /* TranstekTensiometreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935B9672C5A33AF0024D91C /* TranstekTensiometreViewController.swift */; };
+		4935B9682C5A33AF0024D91C /* BPMTensiometreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935B9672C5A33AF0024D91C /* BPMTensiometreViewController.swift */; };
 		4991A9142C64FDB400F06577 /* LifevitSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 4991A9132C64FDB400F06577 /* LifevitSPM */; };
-		49BBB5A02C64CDBF00A21755 /* AOJThermometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BBB59F2C64CDBF00A21755 /* AOJThermometerViewController.swift */; };
+		49BBB5A02C64CDBF00A21755 /* KelvinThermometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BBB59F2C64CDBF00A21755 /* KelvinThermometerViewController.swift */; };
 		580C668F2167676F00DC7F99 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 580C668E2167676F00DC7F99 /* ScanViewController.m */; };
 		EF2EF7438EE43519F75E5342 /* Pods_LifevitSDKSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8299D70EA8280CC6A4A8DA8 /* Pods_LifevitSDKSample.framework */; };
 /* End PBXBuildFile section */
@@ -94,8 +94,8 @@
 		1418503C20A567120000E097 /* TensioBraceletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensioBraceletViewController.h; sourceTree = "<group>"; };
 		1418503D20A567120000E097 /* WSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSViewController.m; sourceTree = "<group>"; };
 		1418503E20A567120000E097 /* TensioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TensioViewController.m; sourceTree = "<group>"; };
-		4935B9672C5A33AF0024D91C /* TranstekTensiometreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranstekTensiometreViewController.swift; sourceTree = "<group>"; };
-		49BBB59F2C64CDBF00A21755 /* AOJThermometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOJThermometerViewController.swift; sourceTree = "<group>"; };
+		4935B9672C5A33AF0024D91C /* BPMTensiometreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPMTensiometreViewController.swift; sourceTree = "<group>"; };
+		49BBB59F2C64CDBF00A21755 /* KelvinThermometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KelvinThermometerViewController.swift; sourceTree = "<group>"; };
 		580C668D2167676F00DC7F99 /* ScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
 		580C668E2167676F00DC7F99 /* ScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
 		C784275915EF24F527A6D4B4 /* Pods-LifevitSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifevitSDKSample.debug.xcconfig"; path = "Target Support Files/Pods-LifevitSDKSample/Pods-LifevitSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -197,8 +197,8 @@
 				1418503D20A567120000E097 /* WSViewController.m */,
 				01DC590F270ED157009DAF1F /* ECGViewController.h */,
 				01DC5910270ED157009DAF1F /* ECGViewController.m */,
-				4935B9672C5A33AF0024D91C /* TranstekTensiometreViewController.swift */,
-				49BBB59F2C64CDBF00A21755 /* AOJThermometerViewController.swift */,
+				4935B9672C5A33AF0024D91C /* BPMTensiometreViewController.swift */,
+				49BBB59F2C64CDBF00A21755 /* KelvinThermometerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -369,9 +369,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4935B9682C5A33AF0024D91C /* TranstekTensiometreViewController.swift in Sources */,
+				4935B9682C5A33AF0024D91C /* BPMTensiometreViewController.swift in Sources */,
 				014A8782216F43BB003453D6 /* DeviceScanCell.m in Sources */,
-				49BBB5A02C64CDBF00A21755 /* AOJThermometerViewController.swift in Sources */,
+				49BBB5A02C64CDBF00A21755 /* KelvinThermometerViewController.swift in Sources */,
 				1418503F20A567120000E097 /* BraceletViewController.m in Sources */,
 				1418500F20A557AA0000E097 /* AppDelegate.m in Sources */,
 				1418504520A567120000E097 /* TensioViewController.m in Sources */,

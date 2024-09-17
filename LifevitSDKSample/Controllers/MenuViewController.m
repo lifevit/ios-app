@@ -20,8 +20,8 @@
 #define MENU_WEIGHT_SCALE 8
 #define MENU_PILL_REMINDER 9
 #define MENU_GLUCOMETER 10
-#define MENU_TRANSTEK_TENSIO 11
-#define MENU_AOJ_THERMOMETER 12
+#define MENU_BPM_TENSIO 11
+#define MENU_KELVIN_THERMOMETER 12
 
 @interface MenuViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -119,12 +119,12 @@
         case MENU_GLUCOMETER:
             [cell.textLabel setText:@"Glucometer"];
             break;
-        case MENU_TRANSTEK_TENSIO:
-            [cell.textLabel setText:@"Transtek Tensiometers"];
+        case MENU_BPM_TENSIO:
+            [cell.textLabel setText:@"BPM Tensiometers"];
             break;
             
-        case MENU_AOJ_THERMOMETER:
-            [cell.textLabel setText:@"AOJ Thermometer"];
+        case MENU_KELVIN_THERMOMETER:
+            [cell.textLabel setText:@"Kelvin Thermometer"];
             break;
         default:
             break;
@@ -168,11 +168,11 @@
         case MENU_GLUCOMETER:
             [self performSegueWithIdentifier:@"showGlucometer" sender:self];
             break;
-        case MENU_TRANSTEK_TENSIO:
-            [self performSegueWithIdentifier:@"showTranstekTensiometers" sender:self];
+        case MENU_BPM_TENSIO:
+            [self performSegueWithIdentifier:@"showBPMTensiometers" sender:self];
             break;
-        case MENU_AOJ_THERMOMETER:
-            [self performSegueWithIdentifier:@"showAOJThermometer" sender:self];
+        case MENU_KELVIN_THERMOMETER:
+            [self performSegueWithIdentifier:@"showKelvinThermometer" sender:self];
             break;
             
         default:

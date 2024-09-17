@@ -1,5 +1,5 @@
 //
-//  AOJThermometerViewController.swift
+//  KelvinThermometerViewController.swift
 //  LifevitSDKSample
 //
 //  Created by Marc on 8/8/24.
@@ -9,14 +9,14 @@
 import UIKit
 import LifevitSPM
 
-class AOJThermometerViewController: UIViewController {
+class KelvinThermometerViewController: UIViewController {
 
     @IBOutlet weak private var statusLabel: UILabel!
     @IBOutlet weak private var infoLabel: UILabel!
     @IBOutlet weak private var valueLabel: UILabel!
     @IBOutlet weak private var modeImageView: UIImageView!
     
-    let manager = AOJManager()
+    let manager = KelvinManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,19 +49,19 @@ class AOJThermometerViewController: UIViewController {
 }
 
 
-extension AOJThermometerViewController: AOJDelegate {
+extension KelvinThermometerViewController: KelvinDelegate {
     func onConnectedPeripheral(identifier: String, name: String) {
         print(">> Connected on \(name) with id: \(identifier)")
     }
     
-    func onDeviceInfo(deviceInfo: AOJDeviceInfo) {
+    func onDeviceInfo(deviceInfo: KelvinDeviceInfo) {
         DispatchQueue.main.async {
             self.statusLabel.text = "Connected ✅"
             self.infoLabel.text = "Battery: \(deviceInfo.battery ?? "-")\nSoftware: \(deviceInfo.version ?? "-")"
         }
     }
     
-    func onDataReceived(data: AOJData) {
+    func onDataReceived(data: KelvinData) {
         DispatchQueue.main.async {
             self.valueLabel.text = data.value ?? "-º"
             

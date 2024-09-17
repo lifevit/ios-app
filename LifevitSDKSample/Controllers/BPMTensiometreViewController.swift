@@ -1,5 +1,5 @@
 //
-//  TranstekTensiometreViewController.swift
+//  BPMTensiometreViewController.swift
 //  LifevitSDKSample
 //
 //  Created by Marc on 31/7/24.
@@ -10,7 +10,7 @@ import UIKit
 import LifevitSPM
 import LSBluetoothPlugin
 
-class TranstekTensiometreViewController: UIViewController {
+class BPMTensiometreViewController: UIViewController {
     
     @IBOutlet weak var lblStatus: UILabel!
     @IBOutlet weak var lblDiastolic: UILabel!
@@ -18,37 +18,37 @@ class TranstekTensiometreViewController: UIViewController {
     @IBOutlet weak var lblPulse: UILabel!
     @IBOutlet weak var lblUUID: UILabel!
     
-    let transtekManager = TranstekManager()
-    var transtekDevice: LSDeviceInfo?
+    let bpmManager = BPMManager()
+    var bpmDevice: LSDeviceInfo?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        transtekManager.delegate = self
+        bpmManager.delegate = self
     }
     
     
     @IBAction func onConnect(_ sender: UIButton) {
-        transtekManager.scanConnectAndRetrieveData()
+        bpmManager.scanConnectAndRetrieveData()
     }
     
     @IBAction func onStartMeasurement(_ sender: UIButton) {
-        guard let device = transtekDevice else { return }
+        guard let device = bpmDevice else { return }
         
-        transtekManager.connectAndRetrieveData(for: device)
+        bpmManager.connectAndRetrieveData(for: device)
     }
     
     
     @IBAction func onConnectByMac(_ sender: UIButton) {
-        guard let macAddress = transtekDevice?.macAddress, !macAddress.isEmpty else { return }
+        guard let macAddress = bpmDevice?.macAddress, !macAddress.isEmpty else { return }
 
-        transtekManager.connectAndRetrieveData(withMacAddress: macAddress)
+        bpmManager.connectAndRetrieveData(withMacAddress: macAddress)
     }
 }
 
-extension TranstekTensiometreViewController: TranstekDelegate {
+extension BPMTensiometreViewController: BPMDelegate {
     func onDeviceInfo(deviceInfo: LSDeviceInfo) {
-        transtekDevice = deviceInfo
+        bpmDevice = deviceInfo
         DispatchQueue.main.async {
             self.lblUUID.text = deviceInfo.macAddress ?? ""
         }

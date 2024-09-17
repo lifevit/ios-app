@@ -74,8 +74,8 @@
                         <segue destination="LWM-dB-OdU" kind="show" identifier="showConnectAllDevices" id="rJz-Ef-fqt"/>
                         <segue destination="Om1-gF-qjn" kind="show" identifier="showPillReminder" id="F7C-R4-9TN"/>
                         <segue destination="6b1-1r-sdq" kind="show" identifier="showGlucometer" id="nhQ-8d-eeC"/>
-                        <segue destination="8y0-n3-yrD" kind="show" identifier="showTranstekTensiometers" id="hMI-eA-IMN"/>
-                        <segue destination="9aE-RA-Pt6" kind="show" identifier="showAOJThermometer" id="1TN-Lc-998"/>
+                        <segue destination="8y0-n3-yrD" kind="show" identifier="showBPMTensiometers" id="hMI-eA-IMN"/>
+                        <segue destination="9aE-RA-Pt6" kind="show" identifier="showKelvinThermometer" id="1TN-Lc-998"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yk4-E1-BC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1100,10 +1100,10 @@
             </objects>
             <point key="canvasLocation" x="1030" y="-897"/>
         </scene>
-        <!--Thermometer View Controller-->
+        <!--Kelvin Thermometer View Controller-->
         <scene sceneID="BOk-qz-FUF">
             <objects>
-                <viewController id="9aE-RA-Pt6" customClass="AOJThermometerViewController" customModule="LifevitSDKSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9aE-RA-Pt6" customClass="KelvinThermometerViewController" customModule="LifevitSDKSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eKh-N0-1qp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1216,10 +1216,10 @@
             </objects>
             <point key="canvasLocation" x="-3935" y="-1021"/>
         </scene>
-        <!--Transtek Tensiometre View Controller-->
+        <!--Tensiometre View Controller-->
         <scene sceneID="z4l-z7-Fiu">
             <objects>
-                <viewController id="8y0-n3-yrD" customClass="TranstekTensiometreViewController" customModule="LifevitSDKSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8y0-n3-yrD" customClass="BPMTensiometreViewController" customModule="LifevitSDKSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FQ6-Gn-A5K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
