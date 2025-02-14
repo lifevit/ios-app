@@ -67,4 +67,8 @@ extension BPMTensiometreViewController: BPMDelegate {
             self.lblPulse.text = "\(data.pluseRate)"
         }
     }
+    
+    func onDeviceFound(deviceName: String) {
+        print(">> onDeviceFound: \(deviceName)")
+    }
 }
