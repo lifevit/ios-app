@@ -17,6 +17,7 @@ class BPMTensiometreViewController: UIViewController {
     @IBOutlet weak var lblSystolic: UILabel!
     @IBOutlet weak var lblPulse: UILabel!
     @IBOutlet weak var lblUUID: UILabel!
+    @IBOutlet weak var lblDeviceName: UILabel!
     
     let bpmManager = BPMManager()
     var bpmDevice: LSDeviceInfo?
@@ -70,5 +71,8 @@ extension BPMTensiometreViewController: BPMDelegate {
     
     func onDeviceFound(deviceName: String) {
         print(">> onDeviceFound: \(deviceName)")
+        DispatchQueue.main.async {
+            self.lblDeviceName.text = deviceName
+        }
     }
 }

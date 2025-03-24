@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vYS-KX-QZV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vYS-KX-QZV">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -1335,7 +1335,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuU-KK-mLe">
-                                <rect key="frame" x="124" y="386" width="28" height="49"/>
+                                <rect key="frame" x="124" y="386" width="270" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0po-cg-oqZ" userLabel="Lbl Device Name">
+                                <rect key="frame" x="172" y="357" width="222" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="GjN-km-61D"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1373,6 +1382,8 @@
                             <constraint firstItem="vbi-iB-7sJ" firstAttribute="trailing" secondItem="xUv-BW-YFG" secondAttribute="trailing" constant="20" id="Rff-8s-d8s"/>
                             <constraint firstItem="yOd-dm-v1u" firstAttribute="top" secondItem="Bqa-4R-ziv" secondAttribute="bottom" constant="8" id="Tjz-h2-g6l"/>
                             <constraint firstItem="vVm-YQ-WWk" firstAttribute="trailing" secondItem="EW2-me-2AM" secondAttribute="trailing" id="Uei-zt-pj6"/>
+                            <constraint firstItem="0po-cg-oqZ" firstAttribute="leading" secondItem="Bqa-4R-ziv" secondAttribute="trailing" constant="20" id="VsM-Ug-cgM"/>
+                            <constraint firstItem="0po-cg-oqZ" firstAttribute="centerY" secondItem="Bqa-4R-ziv" secondAttribute="centerY" id="Vxo-5b-9oM"/>
                             <constraint firstItem="ryK-wh-QLV" firstAttribute="leading" secondItem="7wU-4k-9dS" secondAttribute="trailing" constant="10" id="Xxa-Km-9YN"/>
                             <constraint firstItem="4bj-h7-5wh" firstAttribute="baseline" secondItem="29E-3Y-JMf" secondAttribute="baseline" id="Z1s-gp-iiq"/>
                             <constraint firstItem="4bj-h7-5wh" firstAttribute="top" secondItem="9qX-9D-Ueh" secondAttribute="bottom" constant="8" id="ZTl-fO-k8O"/>
@@ -1381,10 +1392,11 @@
                             <constraint firstItem="7wU-4k-9dS" firstAttribute="leading" secondItem="9qX-9D-Ueh" secondAttribute="leading" id="cGU-F5-waG"/>
                             <constraint firstItem="Bqa-4R-ziv" firstAttribute="top" secondItem="q7N-BN-d9r" secondAttribute="bottom" constant="8" id="dVc-kj-baO"/>
                             <constraint firstItem="hdr-jV-c3n" firstAttribute="leading" secondItem="4bj-h7-5wh" secondAttribute="leading" id="eoi-Ha-d9j"/>
+                            <constraint firstItem="vbi-iB-7sJ" firstAttribute="trailing" secondItem="kuU-KK-mLe" secondAttribute="trailing" constant="20" id="fga-LT-TrA"/>
                             <constraint firstItem="9qX-9D-Ueh" firstAttribute="trailing" secondItem="29E-3Y-JMf" secondAttribute="trailing" id="ii3-Yz-68n"/>
                             <constraint firstItem="ApT-W6-Da0" firstAttribute="leading" secondItem="Bqa-4R-ziv" secondAttribute="leading" id="jj3-TV-Sp8"/>
                             <constraint firstItem="vVm-YQ-WWk" firstAttribute="leading" secondItem="Bqa-4R-ziv" secondAttribute="leading" id="nbb-iW-X1Q"/>
-                            <constraint firstItem="kuU-KK-mLe" firstAttribute="trailing" secondItem="Bqa-4R-ziv" secondAttribute="trailing" id="niq-zu-VWy"/>
+                            <constraint firstItem="vbi-iB-7sJ" firstAttribute="trailing" secondItem="0po-cg-oqZ" secondAttribute="trailing" constant="20" id="oTx-uy-zkU"/>
                             <constraint firstItem="yOd-dm-v1u" firstAttribute="baseline" secondItem="kuU-KK-mLe" secondAttribute="baseline" id="r6c-uQ-MtX"/>
                             <constraint firstItem="ApT-W6-Da0" firstAttribute="leading" secondItem="hdr-jV-c3n" secondAttribute="leading" id="tGU-gT-ZGB"/>
                             <constraint firstItem="vVm-YQ-WWk" firstAttribute="top" secondItem="kuU-KK-mLe" secondAttribute="bottom" constant="8" id="uLy-80-0Ba"/>
@@ -1397,6 +1409,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="x0H-dA-ENe"/>
                     <connections>
+                        <outlet property="lblDeviceName" destination="0po-cg-oqZ" id="Lld-ud-ZXQ"/>
                         <outlet property="lblDiastolic" destination="xUv-BW-YFG" id="0xb-cN-tgl"/>
                         <outlet property="lblPulse" destination="q7N-BN-d9r" id="nPK-kt-XWR"/>
                         <outlet property="lblStatus" destination="ryK-wh-QLV" id="qba-Mo-eb5"/>
